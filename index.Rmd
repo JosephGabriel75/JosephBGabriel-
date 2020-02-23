@@ -17,27 +17,74 @@ output: html_document
 <div class="row" style="padding-top: 30px;">
 <div class="col-sm-6">
 
-# **My Lab Journal**
+## **About**
 
-This is a template example for lab journaling. Students in Matt Crump's Human Cognition and Performance Lab will use this template to learn R, and other things. Students can replace this text with more fun things. People not in my lab can use this too.
+Welcome to the official website of Joseph Gabriel. I am currently a Sophmore pre-med at Rowan University. Over the past few months I have become increasingly passionate about data analytics. 
 
-## How to use
+I made this website to document everything I learn, and share a bit about myself with the world. My website has no ads, affiliates spondored posts or paywalls. Just want to make data more accesible. Hope you enjoy the content. 
 
-1. fork the repo for this website and follow instructions on read me to get set up. [https://github.com/CrumpLab/LabJournalWebsite](https://github.com/CrumpLab/LabJournalWebsite)
 
-2. Blog/journal what you are doing in R, by editing the Journal.Rmd. See the [Journal page](https://crumplab.github.io/LabJournalWebsite/Journal.html) for an example of what to do to get started learning R.
 
-3. See the [links page](https://crumplab.github.io/LabJournalWebsite/Links.html) for lots of helpful links on learning R.
 
-4. Change everything to make it your own.
+## Education 
+
+  * B.S in Biology at Rowan with a minor in Chemistry
+  * Westfield High School 2014-2018
+
+
+
+
+
+> Please check out the Tidy Tuesday tab to find some interesting data visualization.
 
 
 </div>
 <div class="col-sm-6">
 
-### [Crump Lab: Human Cognition and Performance](https://crumplab.github.io)
 
-<a href = "https://crumplab.github.io">
+<a href = "">
 ![](images/logo.png)
 </a>
 </div>
+
+
+##### The following is a very basis rendering of graph using the prgogram language R. In the future I plan to make tutorials on how to use this awesome language! 
+
+```{r, include=FALSE}
+library(tidyverse)
+library(ggplot2)
+```
+
+
+```{r}
+
+mpg %>%
+  ggplot( aes(x=reorder(class, hwy), y=hwy, fill=class)) + 
+    geom_boxplot() +
+    xlab("class") +
+    theme(legend.position="none") 
+
+
+```
+
+
+```{r, include = FALSE}
+library(tidyverse)
+hotels <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-02-11/hotels.csv')
+```
+
+```{r}
+
+
+ggplot(iris, aes(x = Sepal.Width, y = Sepal.Length)) +
+  geom_point() + 
+  labs(x = "Sepal Width", y =  "Sepal Length") + 
+  ggtitle("Setosa, Versicolor, and Virginica Measurments") + 
+  theme(plot.title = element_text(hjust = .5)) + 
+  geom_smooth() +
+  scale_size_area() 
+
+
+
+```
+

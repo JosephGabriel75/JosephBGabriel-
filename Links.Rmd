@@ -1,19 +1,148 @@
 ---
-title: "Resources"
+title: "Curriculum Vitae"
 output: html_document
 ---
 
-### R and R-Studio
+##### <ins>Contact Info</ins> 
 
-[R](http://www.r-project.org) is a free open-source programming language that can be used for statistical analysis, data-simulation, graphing, and lots of other stuff. Another free program is [R-studio](http://www.rstudio.com), that provides a nice graphic interface for R. Download R first, then download R-studio. Both can run on PCs, Macs or Linux. Students will be learning R in the stats labs using the lab manual []().
+Joseph Brandon Gabriel	
 
-### Additional R resources
+Gabrie75@students.rowan.edu	
 
-1. Google is great, Google your problem
-2. [Stackoverflow](https://stackoverflow.com) is great, google will often take you there because someone has already asked your question, and someone else has answered, usually many people have answered your question many ways.
-3. Danielle Navarro wrote a [free Psych Stats textbook using R](https://compcogscisydney.org/learning-statistics-with-r/), it's worth checking out (some of our textbook are based on Danielle's)
-4. I am currently writing another stats textbook (incorporating some of the above). You can read it while it's being made right here [https://crumplab.github.io/statistics/](https://crumplab.github.io/statistics/), also check out the lab manual for more specific things about doing various stats in R (also in draft right now) [https://crumplab.github.io/statisticsLab/](https://crumplab.github.io/statisticsLab/)
-5. Daniell Navarro recently made this website for introducing R, it's great, check it out (also made using this R markdown process): [http://compcogscisydney.org/psyr/](http://compcogscisydney.org/psyr/)
-6. Check out my slightly older programming book that also introduces R [https://crumplab.github.io/programmingforpsych/](https://crumplab.github.io/programmingforpsych/)
-7. This is the definitive guide for all things R Markdown (you will find this very useful as you get better at this skill): [https://bookdown.org/yihui/rmarkdown/](https://bookdown.org/yihui/rmarkdown/)
+(908)-514-2202	
+
+##### <ins>EDUCATION</ins>	
+
+**Rowan University | Glassboro, NJ**                      Winter 2020
+Bachelor of Science in Biology
+Minor in Chemistry	
+	
+ **Relevant Coursework**
+ 
+- Chemistry I & II
+
+- Biology I, II, III, IV
+
+- Data Science
+
+- Anatomy & Physiology I
+
+- Organic Chemistry I & 2 
+	
+	
+##### <ins> SKILLS & INTERESTS </ins> 
+
+Technical Skills: 
+
+- Computational data analysis using R
+ 
+- Microsoft Office: Word, Excel, PowerPoint;
+ 
+- Microsoft Windows and Mac OSX operating systems
+
+	
+ ##### <ins> EXPERIENCE </ins>
+
+**The Dental Family |Westfield, NJ| Shadow Research** 	       
+
+ June 2019 – August 2019
+
+
+*  Reviewed and analyzed various dental procedures. 
+
+
+* Participated in numerous in-depth conversations about dental school and its various requirements. 
+
+
+* Shadowed the day to day activities of a dentist and studied various dental terminologies used in everyday work.
+
+
+ **Sitescapes Mason Contractors |Westfield, NJ| Job Manager** 					                     June 2018-August 2018
+
+
+* Contracted spreadsheets and receipts for various customers
+
+
+* Supervised various jobs sites to make sure the company was running efficiently and effectively 
+
+* Analyzed and managed jobs sites to mitigate risk to workers
+
+
+* Monitored progress and controlled any problems that could delay work as they arose
+
+
+* Scheduled subcontractors and develop criteria needed for subcontractor assignments. 
+
+
+**Ferraro’s |Westfield, NY| Waiter** 		     May 2016 – August 2016
+
+
+* Experienced multitasking and how to balance many customers at once in a constantly changing setting
+
+
+* Gained ethical values in respect to money, receipts and a company’s finances
+
+
+* Maintained serving standards and followed all regulations while performing duties.
+
+##### <ins> ACTIVITIES </ins>
+
+
+**Tedx Club |Glassboro, NJ| Senator** 									   September 2019 – Present
+
+ 
+* Obtains appropriate facilities for organization activities 
+
+
+* Keeps a record of all members/activities of the organization
+
+
+* Prepares an agenda with the President for all meetings 
+
+
+* Prepares organization's calendar of events, and Notifies all members of meetings
+
+
+* Keeps the organization informed of both organizational and university business 
+
+
+* Creates and distributes agendas for each meeting of the organization
+
+**Problem Based Learning |Glassboro, NJ| Club Member** 					                September 2018 – Present
+
+
+* Worked at a pedagogical practice in which students in groups are presented a medical case study each week. 
+
+
+* Students must use scientific knowledge and advanced reasoning skills in order to determine the disease or syndrome.
+
+
+* Discussed new problems structures that enabled students to create conceptual models and explain the problem in the presented in the case. 
+
+**Club H.O.P.E |Westfield, NJ| President**  September 2017 – June 2018
+ 
+ 
+ * Educated club members on various genetic predispositions and volunteered at various nursing homes
+ 
+ 
+  * reated and organized club meetings, activities, and events
+ 
+ 
+ * Implemented creative fundraisers to finances the club’s events
+
+**Environmental Work | Westfield, NJ| President**  April 2018- June 2018
+
+
+ * Restored dilapidated courtyard and built a nesting box for geese
+
+
+ * Donated furniture and kitchen appliances and bring it to help underprivileged families 
+ 
+ 
+ * Coordinated afterschool activities to get more people involved  
+
+
+
+
+
 
