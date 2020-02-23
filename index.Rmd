@@ -19,9 +19,9 @@ output: html_document
 
 ## **About**
 
-Welcome to the official website of Joseph Gabriel. I am currently a Sophmore pre-med at Rowan University. Over the past few months I have become increasingly passionate about data analytics. 
+Welcome to the official website of Joseph Gabriel. I am currently a Sophomore pre-med at Rowan University. Over the past few months I have become increasingly passionate about data analytics. 
 
-I made this website to document everything I learn, and share a bit about myself with the world. My website has no ads, affiliates spondored posts or paywalls. Just want to make data more accesible. Hope you enjoy the content. 
+I made this website to document everything I learn, and share a bit about myself with the world. My website has no ads, affiliates sponsored posts or pay-walls. Just want to make data more accessible. Hope you enjoy the content. 
 
 
 
@@ -48,7 +48,7 @@ I made this website to document everything I learn, and share a bit about myself
 </div>
 
 
-##### The following is a very basis rendering of graph using the prgogram language R. In the future I plan to make tutorials on how to use this awesome language! 
+##### The following are renderings of graphs using the program language R. In the future I plan to make tutorials on how to use this awesome language! 
 
 ```{r, include=FALSE}
 library(tidyverse)
@@ -79,7 +79,7 @@ hotels <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tid
 ggplot(iris, aes(x = Sepal.Width, y = Sepal.Length)) +
   geom_point() + 
   labs(x = "Sepal Width", y =  "Sepal Length") + 
-  ggtitle("Setosa, Versicolor, and Virginica Measurments") + 
+  ggtitle("Setosa, Versicolor, and Virginica Measurements") + 
   theme(plot.title = element_text(hjust = .5)) + 
   geom_smooth() +
   scale_size_area() 

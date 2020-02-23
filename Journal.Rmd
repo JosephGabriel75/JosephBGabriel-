@@ -38,8 +38,8 @@ food_consumption <- readr::read_csv('https://raw.githubusercontent.com/rfordatas
     geom_col(colour = "Black") +
     coord_flip() +
     theme(legend.position = "none") + 
-    labs(x = "Type of Food" , y = "CO2 Emmissions (KgCO2/person/year)") + 
-      ggtitle(" Carbon Dioxide Emmissions for Various Animal and Non Animal Products ") +   theme(plot.title = element_text(hjust = 0.5)) +
+    labs(x = "Type of Food" , y = "CO2 Emissions (KgCO2/person/year)") + 
+      ggtitle(" Carbon Dioxide Emissions for Various Animal and Non Animal Products ") +   theme(plot.title = element_text(hjust = 0.5)) +
     scale_y_continuous(expand = c(0,0)) -> Sotomayor
     ggsave("Sotomayor.png", width = 8, height = 5)
 
@@ -71,7 +71,7 @@ food_consumption <- readr::read_csv('https://raw.githubusercontent.com/rfordatas
 
 In comparison with grazing, intensive livestock production requires large quantities of harvested feed, this overproduction of feed can also hold negative effects. The growing of cereals for feed in turn requires substantial areas of land.
 
-It takes seven pounds of feed to produce a pound of beef (live weight), more than three pounds for a pound of pork, and less than two pounds for a pound of chicken (Alder, 2012). Assumptions about feed quality are implicit in such generalizations. For example, production of a pound of beef cattle live weight may require between 4 and 5 pounds of feed high in protein and metabolizable energy content, or more than 20 pounds of feed of much lower quality (NRC, 2000). 
+It takes seven pounds of feed to produce a pound of beef (live weight), more than three pounds for a pound of pork, and less than two pounds for a pound of chicken (Alder, 2012). Assumptions about feed quality are implicit in such generalizations. For example, production of a pound of beef cattle live weight may require between 4 and 5 pounds of feed high in protein and metabolize energy content, or more than 20 pounds of feed of much lower quality (NRC, 2000). 
 
 ```{r, echo = FALSE, fig.width = 8, fig.height = 5}
 plot(Sotomayor)
