@@ -47,7 +47,25 @@ food_consumption <- readr::read_csv('https://raw.githubusercontent.com/rfordatas
 
 ```
 
-```{r, echo=FALSE}
+
+Below is the code I wrote to make the following graphs. 
+```{r, echo=TRUE}
+    food_consumption %>%     
+    filter(consumption != 0) %>% 
+    mutate(co2perfood = co2_emmission/consumption, food_category) %>%  
+    group_by(food_category) %>% 
+    summarise(element6  = mean(co2perfood)) %>%
+    ggplot(aes(x = reorder(food_category, element6), y = element6, fill =              food_category)) + 
+    geom_col(colour = "Black") +
+    coord_flip() +
+    theme(legend.position = "none") + 
+    labs(x = "Type of Food" , y = "CO2 Emissions (KgCO2/person/year)") + 
+      ggtitle(" Carbon Dioxide Emissions for Various Animal and Non Animal Products ") +   theme(plot.title = element_text(hjust = 0.5)) +
+    scale_y_continuous(expand = c(0,0)) -> Sotomayor
+    ggsave("Sotomayor.png", width = 8, height = 5)
+```
+
+```{r, echo=TRUE}
   food_consumption%>% 
   group_by(country) %>% 
   summarise(element10 = mean(co2_emmission)) -> Supreme

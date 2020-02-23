@@ -308,16 +308,46 @@ div.tocify {
 <h6>Each week I will compiling a data set via github to make these pretty rad graphs. Hope everyone enjoys!</h6>
 <p>The study analyses data from the Food and Agriculture Organization of the United Nations (FAO) to determine the quantity of produce supplied for consumption of 11 food types for all countries researched. Using CO2 emissions data, the carbon footprint per capita is then calculated for each food type. This allows a direct comparison of the CO2 produced for each food type, as well as between seven animal products and four non-animal products. Finally, to determine the index’s final ranking, the difference between the total CO2 produced by the amount of animal product eaten by a person in one country versus the total of non-animal product was calculated. This number reveals the difference in kgs CO2 emitted by animal product vs. non-animal product. The result is a balance that serves as an indicator for the carbon-footprint saving potential per citizen per year if they switch from an animal to a non-animal diet.</p>
 <p>“Veganism is an increasingly mainstream lifestyle choice, as demonstrated by our vegan product revenue doubling in the last year alone. With this study revealing how switching diets could drastically reduce our carbon footprint, it’s becoming increasingly harder to ignore the benefits of moving to a plant-based diet, both for our health and our planet.” says Robert Sünderhauf, CEO at nu3. “For those who find the idea of completely giving up meat a challenge, this index highlights some realistic and achievable alternatives. For instance, healthier fish and poultry have a far lower CO2 emission rate than fatty red meats such as lamb and beef, while eggs produce significantly lower emission rates than milk products and cheese. All evidence points towards a mainly plant-based diet, with lean animal-based protein if needed, to help both our bodies and our environment prosper.”</p>
+<p>Below is the code I wrote to make the following graphs.</p>
+<pre class="r"><code>    food_consumption %&gt;%     
+    filter(consumption != 0) %&gt;% 
+    mutate(co2perfood = co2_emmission/consumption, food_category) %&gt;%  
+    group_by(food_category) %&gt;% 
+    summarise(element6  = mean(co2perfood)) %&gt;%
+    ggplot(aes(x = reorder(food_category, element6), y = element6, fill =              food_category)) + 
+    geom_col(colour = &quot;Black&quot;) +
+    coord_flip() +
+    theme(legend.position = &quot;none&quot;) + 
+    labs(x = &quot;Type of Food&quot; , y = &quot;CO2 Emissions (KgCO2/person/year)&quot;) + 
+      ggtitle(&quot; Carbon Dioxide Emissions for Various Animal and Non Animal Products &quot;) +   theme(plot.title = element_text(hjust = 0.5)) +
+    scale_y_continuous(expand = c(0,0)) -&gt; Sotomayor
+    ggsave(&quot;Sotomayor.png&quot;, width = 8, height = 5)</code></pre>
+<pre class="r"><code>  food_consumption%&gt;% 
+  group_by(country) %&gt;% 
+  summarise(element10 = mean(co2_emmission)) -&gt; Supreme
+
+  ggplot(Supreme, aes(x = country, y = element10, fill = element10)) + 
+  geom_col() + 
+  coord_flip() -&gt; Court
+    
+     
+  Court + scale_fill_gradient2( high = &quot;firebrick&quot;) + 
+  theme(legend.position = &quot;none&quot;) + 
+  labs(x = &quot;Country&quot; , y = &quot;Carbon Dioxide Production (Kg CO2/person/year)&quot;) +     ggtitle(&quot;Food-Related Carbon Emissions Per Capita&quot;) + 
+  theme(plot.title = element_text(hjust = 0.5)) +
+  scale_y_continuous(expand = c(0,0)) -&gt; Ginsburg
+  ggsave(&quot;Ginsburg.png&quot;, width = 7, height = 15)
+  #This is looks at the carbon footprint of 130 nations </code></pre>
 <blockquote>
 <p>Figure 1</p>
 </blockquote>
 <p>In comparison with grazing, intensive livestock production requires large quantities of harvested feed, this overproduction of feed can also hold negative effects. The growing of cereals for feed in turn requires substantial areas of land.</p>
 <p>It takes seven pounds of feed to produce a pound of beef (live weight), more than three pounds for a pound of pork, and less than two pounds for a pound of chicken (Alder, 2012). Assumptions about feed quality are implicit in such generalizations. For example, production of a pound of beef cattle live weight may require between 4 and 5 pounds of feed high in protein and metabolize energy content, or more than 20 pounds of feed of much lower quality (NRC, 2000).</p>
-<p><img src="Journal_files/figure-html/unnamed-chunk-3-1.png" width="768" /></p>
+<p><img src="Journal_files/figure-html/unnamed-chunk-4-1.png" width="768" /></p>
 <blockquote>
 <p>Figure 2</p>
 </blockquote>
-<p><img src="Journal_files/figure-html/unnamed-chunk-4-1.png" width="768" /></p>
+<p><img src="Journal_files/figure-html/unnamed-chunk-5-1.png" width="768" /></p>
 <blockquote>
 <p>For this tidytuesday I made two graphs both using the average co2 emissions. I had to use dplyr to manipulate the data…this proved to be harder than I thought. I worked on this for a couple hours using a ton of resources, mainly cheat sheets and the <ins>Fundamentals of Data Visualization</ins> book. By doing this I added several new commands to my “R” arsenal such as geom_col, coord_flip, scale_y_continuous and more. But I mainly wanted to polish up my ggplot, dplyr, and r-markdown skills. Figure one is very interesting as I was not expecting the data to show almost a ten fold discrepancy between lamb, goat , and beef versus the rest. Form figure one I can conclude that lamb and goat are ecologically inefficient. This is also goes for beef. For figure 2 it looks at the annual co2 emmissions per person for 130 nations. It is crazy to see that Argentina has such a large carbon footprint along with China, America, New Zealand.</p>
 </blockquote>
