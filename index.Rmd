@@ -35,7 +35,7 @@ I made this website to document everything I learn, and share a bit about myself
 
 
 
-> Please check out the Tidy Tuesday tab to find some interesting data visualization.
+> Please check out the Tidy Tuesday tab to find some interesting data visualizations.
 
 
 </div>
